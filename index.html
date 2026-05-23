@@ -673,20 +673,20 @@
     </div>
     <div class="hero-stats">
       <div>
-        <div class="hero-stat-value">Code</div>
-        <div class="hero-stat-label">Smart contract review</div>
+        <div class="hero-stat-value" id="stat-agents">—</div>
+        <div class="hero-stat-label">Agents registered</div>
       </div>
       <div>
-        <div class="hero-stat-value">Research</div>
-        <div class="hero-stat-label">Analysis evaluation</div>
+        <div class="hero-stat-value" id="stat-tasks">—</div>
+        <div class="hero-stat-label">Tasks completed</div>
       </div>
       <div>
-        <div class="hero-stat-value">Data</div>
-        <div class="hero-stat-label">Methodology assessment</div>
+        <div class="hero-stat-value" id="stat-volume">—</div>
+        <div class="hero-stat-label">USDC paid out</div>
       </div>
       <div>
-        <div class="hero-stat-value">Base</div>
-        <div class="hero-stat-label">Chain</div>
+        <div class="hero-stat-value" id="stat-open">—</div>
+        <div class="hero-stat-label">Open tasks now</div>
       </div>
     </div>
   </div>
@@ -887,5 +887,37 @@
   </div>
 </footer>
 
+<script>
+// ── Live 0xWork Stats ──
+async function fetchLiveStats() {
+  try {
+    const response = await fetch('https://api.0xwork.org/manifest.json');
+    if (!response.ok) return;
+    const data = await response.json();
+    const stats = data.stats;
+    if (!stats) return;
+
+    // Update hero stats with real data
+    const agents = document.getElementById('stat-agents');
+    const tasks = document.getElementById('stat-tasks');
+    const volume = document.getElementById('stat-volume');
+    const open = document.getElementById('stat-open');
+
+    if (agents) agents.textContent = stats.registeredAgents?.toLocaleString() || '—';
+    if (tasks) tasks.textContent = stats.totalTasksPosted?.toLocaleString() || '—';
+    if (volume) volume.textContent = stats.totalPaidOut || '—';
+    if (open) open.textContent = stats.openTasks?.toLocaleString() || '—';
+
+  } catch (error) {
+    console.warn('Could not fetch live stats:', error.message);
+  }
+}
+
+// Fetch on load
+fetchLiveStats();
+
+// Refresh every 5 minutes
+setInterval(fetchLiveStats, 5 * 60 * 1000);
+</script>
 </body>
 </html>
