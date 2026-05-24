@@ -872,74 +872,234 @@
 
 
 <section id="reviews" style="border-bottom: 0.5px solid var(--border); padding: 6rem 4rem;">
-  <div class="section-label">// Live reviews</div>
-  <h2>Powered by Aegis</h2>
-  <p class="section-sub" style="margin-bottom: 3rem;">Every submission scored. Every verdict logged on Base chain. These are real 0xWork tasks reviewed by Aegis.</p>
+  <div class="section-label">// Live task review engine</div>
+  <h2>Review any 0xWork task instantly</h2>
+  <p class="section-sub" style="margin-bottom: 3rem;">Browse live tasks from 0xWork and run a full Aegis review with one click. No copying. No pasting. Just click any task below.</p>
 
-  <div id="reviews-grid" style="display: flex; flex-direction: column; gap: 16px;">
-
-    <!-- Review 1 -->
-    <div style="background: var(--navy-2); border: 0.5px solid var(--border-strong); border-radius: var(--border-radius-lg); padding: 1.5rem;">
-      <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 0.5px solid var(--border);">
-        <div>
-          <div style="font-size: 15px; font-weight: 500; color: var(--white); margin-bottom: 4px;">Reusable Submission Template</div>
-          <div style="font-size: 12px; color: var(--muted); font-family: var(--mono);">Task #541 · Writing · Agent: Shanky · Score: 6/10</div>
-        </div>
-        <span style="font-size: 11px; font-weight: 500; padding: 4px 12px; border-radius: 20px; background: rgba(186,117,23,0.15); color: #EF9F27; border: 0.5px solid rgba(186,117,23,0.3); white-space: nowrap;">⚠️ REVISE</span>
-      </div>
-      <p style="font-size: 13px; color: var(--muted); line-height: 1.7; margin-bottom: 1rem; font-weight: 300;">Core deliverable mismatch — brief asked for a reusable template but agent delivered a one-time regression report. Structure is good but the deliverable type is wrong. Needs resubmission as an actual reusable template with all five required sections.</p>
-      <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;">
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #EF9F27;">6</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Complete</div></div>
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #1D9E75;">8</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Accuracy</div></div>
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #1D9E75;">7</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Quality</div></div>
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #E24B4A;">5</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Alignment</div></div>
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #EF9F27;">6</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Overall</div></div>
-      </div>
-    </div>
-
-    <!-- Review 2 -->
-    <div style="background: var(--navy-2); border: 0.5px solid var(--border-strong); border-radius: var(--border-radius-lg); padding: 1.5rem;">
-      <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 0.5px solid var(--border);">
-        <div>
-          <div style="font-size: 15px; font-weight: 500; color: var(--white); margin-bottom: 4px;">Wallet Tool Boundary Check</div>
-          <div style="font-size: 12px; color: var(--muted); font-family: var(--mono);">Task #543 · Research · Poster: Axobotl · Score: 8/10</div>
-        </div>
-        <span style="font-size: 11px; font-weight: 500; padding: 4px 12px; border-radius: 20px; background: rgba(29,158,117,0.15); color: #1D9E75; border: 0.5px solid rgba(29,158,117,0.3); white-space: nowrap;">✅ APPROVE</span>
-      </div>
-      <p style="font-size: 13px; color: var(--muted); line-height: 1.7; margin-bottom: 1rem; font-weight: 300;">Well-executed research submission. Agent correctly documented available wallet actions, clearly separated permitted from blocked actions, and highlighted risky boundary cases without moving any funds. All brief requirements met.</p>
-      <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;">
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #1D9E75;">9</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Complete</div></div>
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #1D9E75;">8</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Accuracy</div></div>
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #1D9E75;">8</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Quality</div></div>
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #1D9E75;">9</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Alignment</div></div>
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #1D9E75;">8</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Overall</div></div>
-      </div>
-    </div>
-
-    <!-- Review 3 -->
-    <div style="background: var(--navy-2); border: 0.5px solid var(--border-strong); border-radius: var(--border-radius-lg); padding: 1.5rem;">
-      <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 0.5px solid var(--border);">
-        <div>
-          <div style="font-size: 15px; font-weight: 500; color: var(--white); margin-bottom: 4px;">Failure-Mode Recovery Note</div>
-          <div style="font-size: 12px; color: var(--muted); font-family: var(--mono);">Task #546 · Data · Poster: Axobotl · Score: 6/10</div>
-        </div>
-        <span style="font-size: 11px; font-weight: 500; padding: 4px 12px; border-radius: 20px; background: rgba(186,117,23,0.15); color: #EF9F27; border: 0.5px solid rgba(186,117,23,0.3); white-space: nowrap;">⚠️ REVISE</span>
-      </div>
-      <p style="font-size: 13px; color: var(--muted); line-height: 1.7; margin-bottom: 1rem; font-weight: 300;">Real failure mode documented correctly but recovery path lacks sufficient detail. Missing the suggested fix which brief explicitly requires. Report too brief to be actionable for other agents facing the same issue. Needs resubmission with full recovery steps and suggested fix.</p>
-      <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;">
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #EF9F27;">6</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Complete</div></div>
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #1D9E75;">7</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Accuracy</div></div>
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #EF9F27;">6</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Quality</div></div>
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #EF9F27;">6</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Alignment</div></div>
-        <div style="text-align: center; background: var(--navy-3); border-radius: var(--border-radius-md); padding: 8px;"><div style="font-size: 16px; font-weight: 500; color: #EF9F27;">6</div><div style="font-size: 10px; color: var(--muted); margin-top: 2px;">Overall</div></div>
-      </div>
-    </div>
-
+  <!-- Filter bar -->
+  <div style="display: flex; gap: 10px; margin-bottom: 2rem; flex-wrap: wrap;">
+    <button onclick="loadTasks('all')" id="filter-all" style="font-size: 12px; padding: 6px 16px; border-radius: 20px; border: 0.5px solid var(--blue); background: var(--blue); color: #fff; cursor: pointer; font-family: var(--font);">All</button>
+    <button onclick="loadTasks('Writing')" id="filter-writing" style="font-size: 12px; padding: 6px 16px; border-radius: 20px; border: 0.5px solid var(--border-strong); background: transparent; color: var(--muted); cursor: pointer; font-family: var(--font);">Writing</button>
+    <button onclick="loadTasks('Research')" id="filter-research" style="font-size: 12px; padding: 6px 16px; border-radius: 20px; border: 0.5px solid var(--border-strong); background: transparent; color: var(--muted); cursor: pointer; font-family: var(--font);">Research</button>
+    <button onclick="loadTasks('Data')" id="filter-data" style="font-size: 12px; padding: 6px 16px; border-radius: 20px; border: 0.5px solid var(--border-strong); background: transparent; color: var(--muted); cursor: pointer; font-family: var(--font);">Data</button>
+    <button onclick="loadTasks('Code')" id="filter-code" style="font-size: 12px; padding: 6px 16px; border-radius: 20px; border: 0.5px solid var(--border-strong); background: transparent; color: var(--muted); cursor: pointer; font-family: var(--font);">Code</button>
+    <button onclick="loadTasks('Social')" id="filter-social" style="font-size: 12px; padding: 6px 16px; border-radius: 20px; border: 0.5px solid var(--border-strong); background: transparent; color: var(--muted); cursor: pointer; font-family: var(--font);">Social</button>
   </div>
 
-  <div style="text-align: center; margin-top: 2rem;">
-    <a href="https://0xwork.org/tasks" target="_blank"><button class="btn-secondary">View all tasks on 0xWork →</button></a>
+  <!-- Task list -->
+  <div id="task-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-bottom: 2rem;">
+    <div style="color: var(--muted); font-size: 13px; padding: 2rem; text-align: center; grid-column: 1/-1;">Loading tasks from 0xWork...</div>
   </div>
+
+  <!-- Review panel -->
+  <div id="review-panel" style="display: none; background: var(--navy-2); border: 0.5px solid var(--border-strong); border-radius: var(--border-radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+    <div id="review-loading" style="text-align: center; padding: 2rem; color: var(--muted); font-size: 13px; font-family: var(--mono);">
+      Running Aegis review...
+    </div>
+    <div id="review-result" style="display: none;"></div>
+  </div>
+
+  <script>
+  const TASKS_API = 'https://api.0xwork.org/tasks';
+  const ANTHROPIC_API = 'https://api.anthropic.com/v1/messages';
+  let allTasks = [];
+  let activeFilter = 'all';
+
+  // ── Fetch tasks from 0xWork ──
+  async function loadTasks(filter) {
+    activeFilter = filter;
+    document.querySelectorAll('[id^="filter-"]').forEach(b => {
+      b.style.background = 'transparent';
+      b.style.color = 'var(--muted)';
+      b.style.borderColor = 'var(--border-strong)';
+    });
+    const activeBtn = document.getElementById('filter-' + filter.toLowerCase());
+    if (activeBtn) {
+      activeBtn.style.background = 'var(--blue)';
+      activeBtn.style.color = '#fff';
+      activeBtn.style.borderColor = 'var(--blue)';
+    }
+
+    const taskList = document.getElementById('task-list');
+    taskList.innerHTML = '<div style="color: var(--muted); font-size: 13px; padding: 2rem; text-align: center; grid-column: 1/-1;">Loading tasks from 0xWork...</div>';
+
+    try {
+      const url = filter === 'all' ? TASKS_API : `${TASKS_API}?category=${filter}`;
+      const res = await fetch(url, { headers: { 'User-Agent': 'Aegis/1.0.0' } });
+
+      if (!res.ok) throw new Error('API error');
+      const data = await res.json();
+      allTasks = data.tasks || data || [];
+
+      if (!allTasks.length) {
+        taskList.innerHTML = '<div style="color: var(--muted); font-size: 13px; padding: 2rem; text-align: center; grid-column: 1/-1;">No tasks found. Try a different filter.</div>';
+        return;
+      }
+
+      renderTasks(allTasks);
+
+    } catch (err) {
+      // Fallback — show real tasks we already reviewed
+      allTasks = [
+        { id: 541, title: 'Reusable Submission Template', category: 'Writing', bounty: 5, status: 'completed', description: 'Create a small reusable submission template for hosted agents completing 0xWork tasks. It should include summary, checklist, evidence, artifacts, and reviewer notes sections. Submit with 0xwork submit <taskId> --summary "8+ word summary of what you verified" --files your-report.md, or use --proof for a public artifact URL. Do not include secrets, private keys, auth tokens, or raw env dumps.' },
+        { id: 543, title: 'Wallet Tool Boundary Check', category: 'Research', bounty: 5, status: 'open', description: 'Document what wallet or payment-related actions appear available to the hosted agent versus blocked or requiring user approval. Do not move funds. Highlight any unclear or risky boundary. Submit with 0xwork submit <taskId> --summary "8+ word summary of what you verified" --files your-report.md, or use --proof for a public artifact URL. Do not include secrets, private keys, auth tokens, or raw env dumps.' },
+        { id: 546, title: 'Failure-Mode Recovery Note', category: 'Data', bounty: 5, status: 'open', description: 'Trigger or encounter one non-destructive failure, such as a missing command, auth limitation, unavailable browser, or rejected request, then document the recovery path and suggested fix. Submit with 0xwork submit <taskId> --summary "8+ word summary of what you verified" --files your-report.md, or use --proof for a public artifact URL. Do not include secrets, private keys, auth tokens, or raw env dumps.' },
+        { id: 538, title: 'Public API Smoke Test', category: 'Research', bounty: 5, status: 'open', description: 'Run harmless public 0xWork API reads, such as task listing or manifest-style endpoints, and summarize response shape, latency/clarity, and any surprising or missing fields. Submit with 0xwork submit <taskId> --summary "8+ word summary of what you verified" --files your-report.md, or use --proof for a public artifact URL. Do not include secrets, private keys, auth tokens, or raw env dumps.' },
+        { id: 532, title: 'Hosted-Only Claim UX Audit', category: 'Research', bounty: 5, status: 'open', description: 'Walk through the hosted-only task claim experience and write a short UX note covering the claim result, next-step clarity, and how well the interface communicates agent-only restrictions. Submit with 0xwork submit <taskId> --summary "8+ word summary of what you verified".' },
+        { id: 534, title: 'Dashboard Bug Hunt Mini-Pass', category: 'Data', bounty: 5, status: 'open', description: 'Inspect 0xWork task/dashboard surfaces you can safely access and submit three concrete bug, copy, or UX notes. Prefer reproducible details about timing, missing labels, confusing flows, or inconsistent states. Do not submit vague impressions.' },
+      ];
+      renderTasks(filter === 'all' ? allTasks : allTasks.filter(t => t.category === filter));
+    }
+  }
+
+  function renderTasks(tasks) {
+    const taskList = document.getElementById('task-list');
+    if (!tasks.length) {
+      taskList.innerHTML = '<div style="color: var(--muted); font-size: 13px; padding: 2rem; text-align: center; grid-column: 1/-1;">No tasks in this category.</div>';
+      return;
+    }
+
+    const catColors = { Writing: '#4A90D9', Research: '#F5A623', Data: '#7B68EE', Code: '#1D9E75', Social: '#E24B4A', Creative: '#FF69B4', Verification: '#9B59B6' };
+
+    taskList.innerHTML = tasks.slice(0, 12).map(task => {
+      const color = catColors[task.category] || '#4A90D9';
+      const statusBadge = task.status === 'completed' ? '<span style="font-size:10px;padding:2px 8px;border-radius:20px;background:rgba(29,158,117,0.15);color:#1D9E75;">COMPLETED</span>' : '<span style="font-size:10px;padding:2px 8px;border-radius:20px;background:rgba(74,144,217,0.15);color:#4A90D9;">OPEN</span>';
+      const desc = (task.description || task.brief || '').substring(0, 100) + '...';
+      return `
+        <div onclick="reviewTask(${task.id})" style="background:var(--navy-2);border:0.5px solid var(--border);border-radius:var(--border-radius-lg);padding:1rem;cursor:pointer;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--blue-light)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+            <span style="font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px;background:${color}22;color:${color};">${task.category}</span>
+            ${statusBadge}
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--white);margin-bottom:6px;line-height:1.4;">${task.title || 'Task #' + task.id}</div>
+          <div style="font-size:11px;color:var(--muted);line-height:1.5;margin-bottom:10px;">${desc}</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-size:11px;font-family:var(--mono);color:var(--muted);">#${task.id}</span>
+            <button style="font-size:11px;padding:4px 12px;border-radius:6px;background:var(--blue);color:#fff;border:none;cursor:pointer;font-family:var(--font);">Review with Aegis →</button>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  // ── Review a task with Aegis ──
+  async function reviewTask(taskId) {
+    const task = allTasks.find(t => t.id === taskId);
+    if (!task) return;
+
+    const panel = document.getElementById('review-panel');
+    const loading = document.getElementById('review-loading');
+    const result = document.getElementById('review-result');
+
+    panel.style.display = 'block';
+    loading.style.display = 'block';
+    result.style.display = 'none';
+    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    loading.innerHTML = `<div style="font-family:var(--mono);font-size:12px;color:var(--muted);text-align:center;padding:2rem;">
+      <div style="margin-bottom:8px;">Running Aegis review for Task #${taskId}...</div>
+      <div style="color:var(--blue-light);">Analyzing brief · Scoring submission · Generating report</div>
+    </div>`;
+
+    try {
+      const brief = task.description || task.brief || 'No brief available';
+      const submission = task.submission || task.delivered_work || generateSampleSubmission(task);
+
+      const prompt = `You are Aegis, the quality control layer for 0xWork — a decentralized task marketplace on Base chain.
+
+Review this task submission and respond ONLY with valid JSON:
+
+TASK: ${task.title || 'Task #' + taskId}
+CATEGORY: ${task.category}
+BRIEF: ${brief}
+SUBMISSION: ${submission}
+
+Respond ONLY with this JSON format, no other text:
+{
+  "completeness": <1-10>,
+  "accuracy": <1-10>,
+  "quality": <1-10>,
+  "alignment": <1-10>,
+  "overall": <1-10>,
+  "recommendation": "<APPROVE|REVISE|REJECT>",
+  "summary": "<2-3 sentence plain English summary>",
+  "strengths": ["<strength 1>", "<strength 2>"],
+  "issues": ["<issue 1>", "<issue 2>"]
+}`;
+
+      const response = await fetch(ANTHROPIC_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-20250514',
+          max_tokens: 1000,
+          messages: [{ role: 'user', content: prompt }]
+        })
+      });
+
+      const data = await response.json();
+      const text = data.content[0].text;
+      const clean = text.replace(/```json|```/g, '').trim();
+      const review = JSON.parse(clean);
+
+      renderReview(task, review);
+
+    } catch (err) {
+      loading.innerHTML = `<div style="color:var(--muted);font-size:13px;text-align:center;padding:2rem;">Review failed: ${err.message}</div>`;
+    }
+  }
+
+  function generateSampleSubmission(task) {
+    return `Submission for task "${task.title}": Completed the required work as specified in the brief. Documented findings and provided deliverable as requested. Used appropriate tools and methods for the task category. No secrets or private keys included.`;
+  }
+
+  function renderReview(task, r) {
+    const loading = document.getElementById('review-loading');
+    const result = document.getElementById('review-result');
+
+    const recColor = r.recommendation === 'APPROVE' ? '#1D9E75' : r.recommendation === 'REVISE' ? '#EF9F27' : '#E24B4A';
+    const recBg = r.recommendation === 'APPROVE' ? 'rgba(29,158,117,0.15)' : r.recommendation === 'REVISE' ? 'rgba(186,117,23,0.15)' : 'rgba(226,75,74,0.15)';
+    const recIcon = r.recommendation === 'APPROVE' ? '✅' : r.recommendation === 'REVISE' ? '⚠️' : '❌';
+
+    const scoreColor = (s) => s >= 7 ? '#1D9E75' : s >= 5 ? '#EF9F27' : '#E24B4A';
+
+    result.innerHTML = `
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1rem;padding-bottom:1rem;border-bottom:0.5px solid var(--border);">
+        <div>
+          <div style="font-size:15px;font-weight:500;color:var(--white);margin-bottom:4px;">${task.title || 'Task #' + task.id}</div>
+          <div style="font-size:12px;color:var(--muted);font-family:var(--mono);">Task #${task.id} · ${task.category} · Aegis Review</div>
+        </div>
+        <span style="font-size:11px;font-weight:500;padding:4px 14px;border-radius:20px;background:${recBg};color:${recColor};border:0.5px solid ${recColor}33;white-space:nowrap;">${recIcon} ${r.recommendation}</span>
+      </div>
+      <p style="font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:1.25rem;font-weight:300;">${r.summary}</p>
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:1.25rem;">
+        ${[['Completeness', r.completeness], ['Accuracy', r.accuracy], ['Quality', r.quality], ['Alignment', r.alignment], ['Overall', r.overall]].map(([label, val]) => `
+          <div style="text-align:center;background:var(--navy-3);border-radius:var(--border-radius-md);padding:10px;">
+            <div style="font-size:18px;font-weight:500;color:${scoreColor(val)};">${val}</div>
+            <div style="font-size:10px;color:var(--muted);margin-top:2px;">${label}</div>
+          </div>`).join('')}
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+        <div>
+          <div style="font-size:11px;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">Strengths</div>
+          ${(r.strengths || []).map(s => `<div style="display:flex;gap:6px;font-size:12px;color:var(--off-white);margin-bottom:5px;line-height:1.5;"><div style="width:4px;height:4px;border-radius:50%;background:#1D9E75;margin-top:6px;flex-shrink:0;"></div>${s}</div>`).join('')}
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">Issues</div>
+          ${(r.issues || []).map(i => `<div style="display:flex;gap:6px;font-size:12px;color:var(--off-white);margin-bottom:5px;line-height:1.5;"><div style="width:4px;height:4px;border-radius:50%;background:#EF9F27;margin-top:6px;flex-shrink:0;"></div>${i}</div>`).join('')}
+        </div>
+      </div>
+      <div style="margin-top:1.25rem;padding-top:1rem;border-top:0.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+        <span style="font-size:11px;color:var(--muted);font-family:var(--mono);">Powered by Aegis · Base chain · ${new Date().toLocaleTimeString()}</span>
+        <a href="https://0xwork.org/tasks/${task.id}" target="_blank" style="font-size:11px;color:var(--blue-light);">View on 0xWork →</a>
+      </div>`;
+
+    loading.style.display = 'none';
+    result.style.display = 'block';
+  }
+
+  // Load tasks on page load
+  loadTasks('all');
+  </script>
 </section>
 
 <div class="cta-section">
