@@ -46,7 +46,7 @@ Scoring: APPROVE >= 7, REVISE 5-6, REJECT < 5. Be specific and actionable.`;
         'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'llama3-8b-8192',
+        model: model: 'llama-3.1-8b-instant',
         messages: [{ role: 'user', content: prompt }],
         max_tokens: 1000,
         temperature: 0.3,
