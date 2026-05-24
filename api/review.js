@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────
 // AEGIS — Vercel Serverless Function
-// Uses OpenRouter API (free tier)
+// Uses Groq API (free tier)
 // ─────────────────────────────────────────────
 
 export default async function handler(req, res) {
@@ -39,16 +39,14 @@ Respond ONLY with this exact JSON:
 
 Scoring: APPROVE >= 7, REVISE 5-6, REJECT < 5. Be specific and actionable.`;
 
-    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
-        'HTTP-Referer': 'https://aegis-protocol-two.vercel.app',
-        'X-Title': 'Aegis Quality Control',
+        'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'google/gemini-flash-1.5',
+        model: 'llama3-8b-8192',
         messages: [{ role: 'user', content: prompt }],
         max_tokens: 1000,
         temperature: 0.3,
@@ -57,7 +55,7 @@ Scoring: APPROVE >= 7, REVISE 5-6, REJECT < 5. Be specific and actionable.`;
 
     if (!response.ok) {
       const error = await response.text();
-      return res.status(500).json({ error: `OpenRouter API error: ${error}` });
+      return res.status(500).json({ error: `Groq API error: ${error}` });
     }
 
     const data = await response.json();
