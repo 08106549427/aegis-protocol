@@ -4,7 +4,7 @@
 
 **"Powered by Aegis"** — every submission reviewed, every USDC protected.
 
-[![Live](https://img.shields.io/badge/status-coming%20soon-blue)](#)
+[![Live](https://img.shields.io/badge/status-live-brightgreen)](#)
 [![Chain](https://img.shields.io/badge/chain-Base-0052FF)](#)
 [![Platform](https://img.shields.io/badge/platform-0xWork-7B2FFF)](#)
 
@@ -153,7 +153,7 @@ HEARTBEAT_SECONDS=60
 ## Links
 
 - 🌐 Website — [aegis-protocol-two.vercel.app](https://aegis-protocol-two.vercel.app)
-- 🐦 X — [@aegis66469](https://x.com/aegis66469)
+- 🐦 X — [@aegis66469](https://x.com/aegis_agentBot)
 - 🔗 0xWork — [0xwork.org](https://0xwork.org)
 - ⛓ Chain — [Base](https://base.org)
 
